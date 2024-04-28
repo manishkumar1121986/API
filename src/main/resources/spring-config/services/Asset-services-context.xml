@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd		
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/security
+   		http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+	
+	<import resource="classpath*:spring-config/Asset-services-beans.xml" />
+   	   	
+   	
+    
+    <!--   JBOSS Datasource Name
+    <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+    	<property name="jndiName" value="java:jboss/datasources/Assetapi"/>
+    </bean>
+
+<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+    	<property name="jndiName" value="java:comp/env/jdbc/Assetapi"/>
+    </bean>
+
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+		
+	<bean id="oracleDaoFactory" class="com.api.common.dao.daofactory.OracleDAOFactory">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+		
+	<bean class="org.springframework.scheduling.concurrent.ScheduledExecutorFactoryBean">
+    	<property name="scheduledExecutorTasks">
+       	<list>
+           <bean class="org.springframework.scheduling.concurrent.ScheduledExecutorTask">
+               <property name="period" value="120000"/>
+               <property name="runnable">
+                   <bean class="org.springframework.scheduling.support.MethodInvokingRunnable">
+                       <property name="targetObject" ref="mailMessageSchduler"/>
+                       <property name="targetMethod" value="sendCommunications"/>
+                   </bean>
+               </property>
+           </bean>
+       	</list>
+    	</property>
+	</bean> -->
+			 
+</beans>  		

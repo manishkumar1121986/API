@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<properties>
+  <category name="general">
+      <property name="log4j" value="log4j.properties"/>
+   </category>
+</properties>

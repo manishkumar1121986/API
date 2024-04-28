@@ -1,0 +1,718 @@
+<!-- ######## This is a comment, visible only in the source editor  ######## -->
+
+<style>
+
+table.purpleHorizon {
+  border: 4px solid #4F7849;
+  background-color: #CEE0CC;
+  width: 350px;
+  text-align: center;
+  border-collapse: collapse;
+}
+ table.purpleHorizon th {
+  border: 1px solid #4F7849;
+  padding: 5px 2px;
+  background-color: #4F7849;
+}
+
+table.purpleHorizon td {
+  border: 1px solid #4F7849;
+  padding: 5px 2px;
+ 
+}
+table.purpleHorizon tbody td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+}
+table.purpleHorizon tr:nth-child(even) {
+  background: #CEE0CC;
+}
+table.purpleHorizon thead {
+  background: #4F7849;
+  background: -moz-linear-gradient(top, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+  background: -webkit-linear-gradient(top, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+  background: linear-gradient(to bottom, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+  border-bottom: 2px solid #000000;
+}
+table.purpleHorizon thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  border-left: 2px solid #000000;
+}
+table.purpleHorizon thead th:first-child {
+  border-left: none;
+}
+
+table.purpleHorizon tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #CEE0CC;
+  background: -moz-linear-gradient(top, #dae8d9 0%, #d3e3d1 66%, #CEE0CC 100%);
+  background: -webkit-linear-gradient(top, #dae8d9 0%, #d3e3d1 66%, #CEE0CC 100%);
+  background: linear-gradient(to bottom, #dae8d9 0%, #d3e3d1 66%, #CEE0CC 100%);
+  border-top: 5px solid #4F7849;
+}
+table.purpleHorizon tfoot td {
+  font-size: 13px;
+}
+table.purpleHorizon tfoot .links {
+  text-align: right;
+}
+table.purpleHorizon tfoot .links a{
+  display: inline-block;
+  background: #4F7849;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+
+</style>
+<h1 style="color: #4485b8;">API to get All due of agreement</h1>
+<p><strong style="color: #000;">url:</strong> <span>http://10.0.53.212:9002/Asset-webapps/rest/dueDtl/getDetails</span></p>
+<p>header parameter :-<span>Content-Type = "application/json"</span></p>
+<p></p>
+<p>sample request&nbsp;</p>
+
+<table border="1"><tr><th>request</th><td><table border="1"><tr><th>header</th><td><table border="1"><tr><th>msgID</th><td>12</td></tr><tr><th>reqSystem</th><td>AB</td></tr><tr><th>reqType</th><td>DUEDTL</td></tr><tr><th>userId</th><td>HASSAN</td></tr></table></td></tr><tr><th>data</th><td><table border="1"><tr><th>application</th><td><table border="1"><tr><th>loanAccountNo</th><td>XSAL011800000054</td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+
+<div><span>sample Response:-&nbsp;</span></div>
+
+<table border="1"><tr><th>response</th><td><table border="1"><tr><th>header</th><td><table border="1"><tr><th>msgID</th><td>12</td></tr><tr><th>reqSystem</th><td>AB</td></tr><tr><th>reqType</th><td>DUEDTL</td></tr><tr><th>userId</th><td>HASSAN</td></tr><tr><th>responseCode</th><td>0000</td></tr><tr><th>responseTimeStamp</th><td>Tue Jul 19 15:19:01 EDT 2022</td></tr><tr><th>status</th><td>Request Processed Successfully</td></tr><tr><th>token</th><td>None</td></tr><tr><th>password</th><td>None</td></tr><tr><th>responseMsg</th><td>Request Processed Successfully</td></tr></table></td></tr><tr><th>data</th><td><table border="1"><tr><th>application</th><td><table border="1"><tr><th>service</th><td>None</td></tr><tr><th>loanAccountNo</th><td>XSAL011800000054</td></tr><tr><th>applicationId</th><td>100167</td></tr><tr><th>loanStatus</th><td>A</td></tr></table></td></tr><tr><th>dueDtlObject</th><td><table border="1"><tr><th>emi</th><td>None</td></tr><tr><th>otherCharges</th><td>None</td></tr><tr><th>totalDue</th><td>None</td></tr><tr><th>dueDtlDataobject</th><td><table border="1"><thead><tr><th>chargeid</th><th>chargedesc</th><th>txnid</th><th>txntype</th><th>advicetype</th><th>adviceamt</th><th>txnadjustedamt</th><th>bpid</th><th>remarks</th><th>bptype</th><th>txnadviceid</th><th>caseid</th><th>moduleid</th><th>chargeamt</th><th>makerid</th><th>makerdate</th><th>authid</th><th>authdate</th><th>advicedate</th><th>ptxnadviceid</th><th>chargeadjamt</th><th>tax_applicable</th></tr></thead><tbody><tr><td>2</td><td>AMT FINANCED</td><td>100167</td><td>A</td><td>P</td><td>22600</td><td>22600</td><td>100282</td><td></td><td>LS</td><td>232</td><td>100167</td><td>LEA</td><td>22600</td><td></td><td></td><td></td><td></td><td>2008-04-17 00:00:00.0</td><td></td><td>22600</td><td>N</td></tr><tr><td>9</td><td>INSTALLMENT AMOUNT</td><td>6022562</td><td>I</td><td>R</td><td>393</td><td>393</td><td>100282</td><td></td><td>LS</td><td>2443568</td><td>100167</td><td>LEA</td><td>393</td><td>RZSK</td><td>2010-06-01 00:00:00.0</td><td>RZSK</td><td>2010-06-01 00:00:00.0</td><td>2010-06-01 00:00:00.0</td><td></td><td>393</td><td>N</td></tr></tbody></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+<p>&nbsp;</p>
+<h4>table below For specification</h4>
+
+<!-- ######## This is a comment, visible only in the source editor  ######## -->
+<h4></h4>
+<table class="purpleHorizon" style="vertical-align: top; height: 425px; width: 723px;">
+<thead>
+<tr style="height: 23px;">
+<th style="height: 23px; width: 721.933px;" colspan="4">Request /Respons Header</th>
+</tr>
+<tr style="height: 23px;">
+<th style="width: 140px; height: 23px;">Parameter</th>
+<th style="width: 160.083px; height: 23px;">Description 1</th>
+<th style="width: 276.317px; height: 23px;">validation/Default value</th>
+<th style="width: 145.533px; height: 23px;">Request/Response</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 65px;">
+<td style="min-width: 140px; width: 140px; height: 65px;">
+<div>
+<div>
+<div><span>"header"--&gt;</span></div>
+<div>
+<div>
+<div><span>"msgID"</span></div>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td style="width: 160.083px; height: 65px;">Unique id for request.</td>
+<td style="width: 276.317px; height: 65px;">
+<p>1. Alphanumeric only.</p>
+<p>2. Max length 10</p>
+</td>
+<td style="width: 145.533px; height: 65px;">
+<p>Request/Response</p>
+</td>
+</tr>
+<tr style="height: 65px;">
+<td style="width: 140px; height: 65px;">
+<div>
+<div><span>"header"--&gt;</span></div>
+<div><span><span>"</span></span>reqSystem<span>"<br /></span></div>
+</div>
+</td>
+<td style="background-color: rgba(0, 0, 0, 0.1); width: 160.083px; height: 65px;">
+<p>&nbsp; Channels from the request is initiated</p>
+</td>
+<td style="width: 276.317px; height: 65px;">
+<p>1. Alphabets only</p>
+<p>2. Max length 50</p>
+</td>
+<td style="width: 145.533px; height: 65px;">
+<p>Request/Response</p>
+</td>
+</tr>
+<tr style="height: 65px;">
+<td style="width: 140px; height: 65px;">
+<div>
+<div><span>"header"--&gt;</span></div>
+<div><span><span>"</span></span>reqType<span>"</span></div>
+</div>
+</td>
+<td style="width: 160.083px; height: 65px;">Service name</td>
+<td style="width: 276.317px; height: 65px;">
+<p>1. Alphanumeric only.</p>
+<p>2. Max length 50</p>
+</td>
+<td style="width: 145.533px; height: 65px;">
+<p>Request/Response</p>
+</td>
+</tr>
+<tr style="height: 103px;">
+<td style="width: 140px; height: 103px;">
+<div>
+<div><span>"header"--&gt;</span></div>
+<div><span><span>"</span></span>userId<span>"</span></div>
+</div>
+</td>
+<td style="width: 160.083px; height: 103px;">valid User id as per configuration</td>
+<td style="width: 276.317px; height: 103px;">
+<p>1. Alphanumeric only.</p>
+<p>2. Max length 20</p>
+</td>
+<td style="width: 145.533px; height: 103px;">
+<p>Request/Response</p>
+</td>
+</tr>
+<tr style="height: 81px;">
+<td valign="top" style="width: 140px; height: 81px;">
+<div>
+<div><span>"header"--&gt;</span></div>
+<div><span><span>"</span></span>responseCode<span>"</span></div>
+</div>
+</td>
+<td style="width: 160.083px; height: 81px;">
+<p>Responce Code</p>
+</td>
+<td style="width: 276.317px; height: 81px;">
+<p>NA</p>
+</td>
+<td style="width: 145.533px; height: 81px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 140px;">
+<div>
+<div><span>"header"--&gt;</span></div>
+<div><span><span>"</span></span>responseTimeStamp<span>"</span></div>
+</div>
+</td>
+<td style="width: 160.083px;">
+<p>Time Stamp of Response</p>
+</td>
+<td style="width: 276.317px;">
+<p>NA</p>
+</td>
+<td style="width: 145.533px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 140px;">
+<div>
+<div><span>"header"--&gt;</span></div>
+<div><span>"status </span><span>"</span></div>
+</div>
+</td>
+<td style="width: 160.083px;">
+<div>
+<div><span>status of respons</span></div>
+</div>
+</td>
+<td style="width: 276.317px;">
+<p>NA</p>
+</td>
+<td style="width: 145.533px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 140px;">
+<div>
+<div><span>"header"--&gt;</span></div>
+<div><span><span>"</span></span>responseMsg"</div>
+</div>
+</td>
+<td style="width: 160.083px;">
+<p>Discription of error code</p>
+</td>
+<td style="width: 276.317px;">
+<p>NA</p>
+</td>
+<td style="width: 145.533px;">
+<h4>Response</h4>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+
+<!-- ######## This is a comment, visible only in the source editor  ######## -->
+<h4></h4>
+<table class="purpleHorizon" style="vertical-align: top; height: 549px; width: 723px;">
+<thead>
+<tr style="height: 23px;">
+<th style="height: 23px; width: 721.933px;" colspan="4">Request /Respons Data</th>
+</tr>
+<tr style="height: 23px;">
+<th style="width: 183.1px; height: 23px;">Parameter</th>
+<th style="width: 178.083px; height: 23px;">Description 1</th>
+<th style="width: 215.117px; height: 23px;">validation/Default value</th>
+<th style="width: 145.633px; height: 23px;">Request/Response</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 65px;">
+<td style="min-width: 140px; width: 183.1px; height: 65px;">
+<div>
+<div><span><span>"</span></span>data<span>"--&gt;</span></div>
+<div><span><span>"</span></span>application<span><span>"--&gt;<br />"</span></span>loanAccountNo<span>"</span></div>
+</div>
+</td>
+<td style="width: 178.083px; height: 65px;">Lan no of customer.</td>
+<td style="width: 215.117px; height: 65px;">
+<p>Directly from data</p>
+</td>
+<td style="width: 145.633px; height: 65px;">
+<p>Request/Response</p>
+</td>
+</tr>
+<tr style="height: 65px;">
+<td style="width: 183.1px; height: 65px;">
+<div>
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>application<span><span>"--&gt;<br />"</span></span>applicationId<span>"<br /></span></div>
+</div>
+</td>
+<td style="background-color: rgba(0, 0, 0, 0.1); width: 178.083px; height: 65px;">
+<p>&nbsp;Application Id of Customer</p>
+</td>
+<td style="width: 215.117px; height: 65px;">
+<p>Directly from data</p>
+</td>
+<td style="width: 145.633px; height: 65px;">
+<p>Request/Response</p>
+</td>
+</tr>
+<tr style="height: 65px;">
+<td style="width: 183.1px; height: 65px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>application<span>"--&gt;<br />"loanStatus</span><span>"</span></div>
+</td>
+<td style="width: 178.083px; height: 65px;">
+<div>
+<div><span>Status of Loan</span></div>
+</div>
+</td>
+<td style="width: 215.117px; height: 65px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px; height: 65px;">
+<p>Response</p>
+</td>
+</tr>
+<tr style="height: 81px;">
+<td style="width: 183.1px; height: 81px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span><span>"</span></span>dueDtlObject<span><span>"--&gt;<br />"</span></span>emi<span>"</span></div>
+</td>
+<td style="width: 178.083px; height: 81px;">EMI of customer</td>
+<td style="width: 215.117px; height: 81px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px; height: 81px;">
+<p>Response</p>
+</td>
+</tr>
+<tr style="height: 81px;">
+<td valign="top" style="width: 183.1px; height: 10px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span><span>"--&gt;<br />"</span></span>otherCharges<span>"</span></div>
+</td>
+<td style="width: 178.083px; height: 10px;">
+<p>Other charges</p>
+</td>
+<td style="width: 215.117px; height: 10px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px; height: 10px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr style="height: 65px;">
+<td style="width: 183.1px; height: 65px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span><span>"--&gt;<br />"</span></span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span><span>"</span></span>chargeid<span>"</span></div>
+</td>
+<td style="width: 178.083px; height: 65px;">
+<div>
+<div><span>chargeid</span></div>
+</div>
+</td>
+<td style="width: 215.117px; height: 65px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px; height: 65px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr style="height: 65px;">
+<td style="width: 183.1px; height: 65px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span><span>"</span></span>chargedesc<span>"</span></div>
+</td>
+<td style="width: 178.083px; height: 65px;">
+<div>
+<div><span>chargedesc</span></div>
+</div>
+</td>
+<td style="width: 215.117px; height: 65px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px; height: 65px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr style="height: 65px;">
+<td style="width: 183.1px; height: 65px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span><span>"</span></span>txnid<span>"</span></div>
+</td>
+<td style="width: 178.083px; height: 65px;">
+<div>
+<div><span>txnid</span></div>
+</div>
+</td>
+<td style="width: 215.117px; height: 65px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px; height: 65px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span><span>"</span></span>txntype<span>"<br /></span></div>
+</td>
+<td style="width: 178.083px;">txntype</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>advicetype<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>advicetype</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>txnadjustedamt<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>txnadjustedamt</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>bpid<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>bpid</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>remarks<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>remarks</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>bptype<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>bptype</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>txnadviceid<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>txnadviceid</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>caseid<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>caseid</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>moduleid<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>moduleid</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>chargeamt<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>chargeamt</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>makerid<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>makerid</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>makerdate<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>makerdate</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>authid<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>authid</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>authdate<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>authdate</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>advicedate<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>advicedate</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>ptxnadviceid<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>ptxnadviceid</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>chargeadjamt<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>chargeadjamt</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+<tr>
+<td style="width: 183.1px;">
+<div><span>"</span>data<span>"--&gt;</span></div>
+<div><span>"</span>dueDtlObject<span>"--&gt;<br />"</span>dueDtlDataobject<span>"--&gt;</span></div>
+<div><span>"</span>tax_applicable<span>"</span></div>
+</td>
+<td style="width: 178.083px;">
+<div>
+<div><span>tax_applicable</span></div>
+</div>
+</td>
+<td style="width: 215.117px;">
+<p>NA</p>
+</td>
+<td style="width: 145.633px;">
+<h4>Response</h4>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
