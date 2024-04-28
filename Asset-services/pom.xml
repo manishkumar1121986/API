@@ -37,7 +37,7 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-		<dependency>
+		
 <dependency> 
 <groupId>com.microsoft.sqlserver</groupId> 
 <artifactId>sqljdbc4</artifactId> 
