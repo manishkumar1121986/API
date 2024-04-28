@@ -37,7 +37,13 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-		
+		<dependency>
+<dependency> 
+<groupId>com.microsoft.sqlserver</groupId> 
+<artifactId>sqljdbc4</artifactId> 
+<version>4.0</version>
+<scope>runtime</scope>
+</dependency>
 		<dependency>
     <groupId>javax.sql</groupId>
     <artifactId>rowset</artifactId>
