@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+      <!--     
+        <Resource name="jdbc/finnoneapi" auth="Container"
+       		type="javax.sql.DataSource" username="FCSCORERRMAIN" password="FCSCORERRMAIN"
+       		factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+       		driverClassName="oracle.jdbc.driver.OracleDriver" 
+       		url="jdbc:oracle:thin:@10.1.50.138:1523:NDWIE1"
+        	maxActive="100" maxIdle="15" maxWait="-1" removeAbandoned="true" removeAbandonedTimeout="30"
+      />
+      <Resource name="jdbc/finnoneapi" auth="Container"
+            type="javax.sql.DataSource" username="FCSRRMAIN" password="FCSRRMAIN"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+            driverClassName="oracle.jdbc.driver.OracleDriver" 
+            url="jdbc:oracle:thin:@10.1.50.152:1522:GDWIE1"
+             maxActive="100" maxIdle="15" maxWait="-1" removeAbandoned="true" removeAbandonedTimeout="30"
+      /> 
+          
+      <Resource name="jdbc/finnoneapi" auth="Container"
+       		type="javax.sql.DataSource" username="finnoneapi" password="finnoneapi"
+       		factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+       		driverClassName="oracle.jdbc.driver.OracleDriver" 
+       		url="jdbc:oracle:thin:@10.1.60.113:1522:gcaie4"
+        	maxActive="100" maxIdle="15" maxWait="-1" removeAbandoned="true" removeAbandonedTimeout="30"
+      />
+       -->  
+      <Resource name="jdbc/Assetapi" auth="Container"
+            type="javax.sql.DataSource" username="ABSEC_NEW" password="MOON_1234"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+            driverClassName="oracle.jdbc.driver.OracleDriver" 
+            url="jdbc:oracle:thin:@10.1.15.74:1599:FINNPROD"
+             maxActive="100" maxIdle="15" maxWait="-1" removeAbandoned="true" removeAbandonedTimeout="30"
+      /> 
+      
+</Context>
