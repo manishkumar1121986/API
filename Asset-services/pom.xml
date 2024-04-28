@@ -44,11 +44,8 @@
 <version>4.0</version>
 <scope>runtime</scope>
 </dependency>
-		<dependency>
-    <groupId>javax.sql</groupId>
-    <artifactId>rowset</artifactId>
-    <version>1.0.1</version>
-</dependency>
+		
+			
 
 
 		<dependency>
@@ -67,11 +64,8 @@
 		      </exclusions>
 		</dependency> 
 	
-<dependency>
-    <groupId>com.sun</groupId>
-    <artifactId>tools</artifactId>
-    <version>1.5.0</version>
-</dependency>
+
+			
 
 		<dependency>
 			  <groupId>org.springframework</groupId>
